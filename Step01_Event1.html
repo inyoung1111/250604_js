@@ -12,19 +12,19 @@
     
     
     <script>
-        /*
-        클릭이벤트 HTML태그에 
-        
+     /*
+            [ 클릭이벤트1 ]
+            - HTML태그에 onclick='함수이름()'
         */
-       const send = () => alert('전송완료');
-
-        //클릭이벤트 2
-       document.querySelector('#sendBtn')
-       .addEventListener('click', send);
-
-       document.querySelector('#inputMsg')
-       //키보드 이벤트
-
+        const send = () => alert('전송완료');
+        /*
+            [ 클릭이벤트2 ]
+        */
+        document.querySelector('#sendBtn')
+        .addEventListener('click', send);
+        /*
+            [ 키보드 이벤트 ]
+        */
         document.querySelector('#inputMsg')
         .addEventListener('keyup', ()=>{
             console.log('키보드누름!');

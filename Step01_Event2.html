@@ -12,6 +12,19 @@
     
     
     <script>
+        document.querySelector('#inputMsg')
+        .addEventListener('keyup', (e)=>{
+            console.log(e);
+            /*
+            만약 엔터키를 누르면 input요소에 입력한
+            value를 읽어와서 p요소의 innerText로 출력
+            */
+            if(e.code === 'Enter'){
+                // console.log('엔터!');
+                const msg = document.querySelector('#inputMsg').value;
+                document.querySelector('#myConsole').innerHTML = msg;
+            }
+        })
 
 
  // e 매개변수 

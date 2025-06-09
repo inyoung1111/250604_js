@@ -18,3 +18,55 @@
 	8. resize을 이용하여 브라우저의 width값이 700미만 또는 height값이 700미만이면 볼터치가 생기게 해보세요
 	
 */
+
+// const facehover = document.querySelector('facehover');
+
+// facehover.addEventListener('moiseenter', function(){
+// 	// document.querySelector('.balgre').computedStyleMap.opactiy = 1;
+// 	// document.querySelector('.balgre').computedStyleMap.transtion = 'opactiy 0.3s';
+
+// 	console.log(this)
+
+// 	this.previousElementSibling.style.opactiy = 1;
+// 	this.previousElementSibling.style.transtion = 'opacity 0.3s'
+
+	
+// })
+
+// function handleMouseMove(e){
+// 	console.log(e);
+
+// 	const face = document.querySelector('.face');
+// 	face.computedStyleMap.left = e.pageX + 'px';
+// 	face.computedStyleMap.top = e.pageY + 'px';
+
+//  }
+// //스크롤할때  따라 오도록 
+// window.addEventListener('mousemove',handleMouseMove);
+// window.removeEventListener('mousemove',handleMouseMove);
+
+// function handleKeyDown (e){
+// 	console.log(e.KeyCode);
+// 	const face = document.querySelector('.face');
+
+// 	const currentLeft = parseInt(getComputedStyle(face).left)
+// 	const currentTop = parseInt(getComputedStyle(face).top)
+
+
+// 	if(e.KeyCode === 37){
+// 		console.log('LEET!');
+// 		face.computedStyleMap.left = currentLeft = 10 + 'px' 
+// 	}
+// }
+
+const facehover = document.querySelector('.facehover');
+
+
+facehover.addEventListener('mouseenter', function(){
+	// document.querySelector('.balgre').style.opacity = 1;
+	// document.querySelector('.balgre').style.transition = 'opacity 0.3s';
+	console.log(this)
+	this.previousElementSibling.style.opacity = 1;
+	this.previousElementSibling.style.transition = 'opacity 0.3s';
+})
+
