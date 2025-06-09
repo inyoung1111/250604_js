@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+            padding: 20px;
+            position: relative;
+        }
+        .box1{background-color: yellow;}
+        .box2{background-color: aqua;}
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1" id="miuseoberbox">
+        miuseober박스
+        <div class="charset">자식 </div>
+    </div>
+    <div class="box box2" id="miuseenterbox">
+        miuseober박스
+        <div class="child">자식 </div>
+    </div>
+    <div class="log" id="miusebox">
+        miuseober박스
+        <p>mouseover : <span id="mouseenterCount">0</span></p>
+        <p>mouseover : <span id="mouseenterCount">0</span></p>
+    </div>
+    <script>
+        document.querySelector('#miuseoberbox')
+        .addEventListener('#miuseovr', ()=>{
+            moiseovercount++;
+            document.querySelector('mouseenterCount').innerHTML = 
+            
+        })
+        document.querySelector('#miuseoberbox')
+        .addEventListener('mouseenter', ()=>{
+            moiseovercount++;
+            document.querySelector('mouseenterCount').innerHTML = 
+        })
+
+    </script>
+</body>
+</html>

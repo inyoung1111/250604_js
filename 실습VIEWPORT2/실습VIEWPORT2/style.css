@@ -1,0 +1,55 @@
+/* CSS Reset */
+
+body,
+ul,
+h1,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+body {
+  background-color: #64727f;
+}
+
+/*
+	1. header 로고영역을 만들어주세요.
+	- 배경색 c9e5ff
+	- 로고 너비값 280px / 높이값 50px
+
+
+	2. gnb 영역을 만들어주세요.
+	- 배경색 505c66
+
+	3. a태그에 마우스오버 기능을 넣고 풍선이미지를 배치해주세요.
+
+	4. 컨텐츠 영역의 만들어주세요.
+	- 배경색 282e33
+	- h3 색상 77aaff
+
+	5. 아이콘 영역 가상상클래스에 background-image로 넣어주세요.
+
+	6. FOOTER영역을 만들어주세요.
+	배경색 282e33
+
+	7. 와이드 스크린에서 width 값이 1200을 넘지않게 해주세요.
+
+	8. 태블릿(1024px)에서 컨텐츠가 3개씩 나오게 해주세요.
+
+	9. 모바일(768px)에서 컨텐츠는 2개씩 로고와 gnb수정해주세요.
+
+	10. 500px보다 작아지면 컨텐츠 1개씩 나오게 해주세요.
+*/

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Event1.html</title>
+</head>
+<body>
+    <button >CLICK1</button>
+    <button>CLICK2</button>
+    <input type="text" id="inputMsg"/>
+    
+    
+    <script>
+        /*
+        클릭이벤트 HTML태그에 
+        
+        */
+       const send = () => alert('전송완료');
+
+        //클릭이벤트 2
+       document.querySelector('#sendBtn')
+       .addEventListener('click', send);
+
+       document.querySelector('#inputMsg')
+       //키보드 이벤트
+
+        document.querySelector('#inputMsg')
+        .addEventListener('keyup', ()=>{
+            console.log('키보드누름!');
+        })
+      
+    </script>
+</body>
+</html>

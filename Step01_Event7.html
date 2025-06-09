@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Event7.html</title>
+    <style>
+        #info{
+            margin-top: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">dd</div>
+    <script>
+        window.addEventListener('resize',()=>{
+            const width = window.innerWidth;
+            const height = window.innerheight;
+
+            document.querySelector('#info').innerHTML
+            = `브라우저 너비 : ${}PX, 높이 ${}
+        })
+    </script>
+</body>
+</html>

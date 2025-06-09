@@ -1,0 +1,186 @@
+body,
+ul,
+li,
+h3,
+p {
+  margin: 0px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/*
+	1. 배경색 f4f4f4를 설정하고
+	큰 향수 이미지를 배경 이미지로 붙여주세요.
+
+    2. Sidebar를 만들어주세요.
+	너비값 300px
+
+	3. 메뉴에 hover하면 배경색을 검정색으로 바꿔주세요. 
+
+	4. 콘텐츠 영역을 만들어주세요.
+	너비값은 1000px
+
+	6. 태블릿 1024px 이하일때 반응형으로 바꿔주세요
+
+	7. 모바일 786px 이하일때 반응형으로 바꿔주세요
+*/
+
+body {
+	background-color: #f4f4f4;
+	background-image: url('images/big-perfume.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right bottom;
+	background-size: 35%;
+}
+
+.sidebar {
+	background-color: #222;
+	width:300px;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+.sidebar .logo {
+	display: block;
+	width:200px;
+	height:60px;
+	background-image: url('images/logo.png');
+	text-indent: -9999px;
+	margin:50px auto;
+}
+
+.sidebar ul {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.sidebar ul li {}
+.sidebar ul li a {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+
+.sidebar ul li a:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.contents {
+	/*
+		최대 너비값 1000px
+		min-width, max-height, min-height
+	*/
+	max-width:1000px; 
+	/* background-color: red; */
+	margin-left: 320px;
+
+	display:flex;
+	flex-wrap:wrap;
+	gap:20px;
+}
+
+.contents li {
+	/* float:left; */
+	/* margin-left: 20px;
+	margin-bottom: 20px; */
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	position:relative;
+}
+
+.contents li .desc {
+	position: absolute;
+	left:0;
+	bottom:0;
+	text-align: center;
+	width: 100%;
+	padding:20px 0;
+	color:#8e4389;
+	background: linear-gradient(180deg,rgba(120, 217, 255, 0) 0%, rgba(191, 225, 255, 1) 100%);
+}
+
+/************************* 태블릿 *************************/
+@media (max-width:1024px) {
+	body {
+		background-image: none;
+	}
+	.sidebar {
+		width:100%;
+		height: auto;
+		z-index: 10;
+		text-align: center;
+	}
+	.sidebar ul {
+		margin-bottom: 0;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	.sidebar ul li {
+		float:left;
+	}	
+	.sidebar ul li a {
+		height: 50px;
+		line-height: 50px;
+		padding:0 15px;
+	}
+	.sidebar .logo {
+		margin-bottom: 20px;
+	}
+	.contents {
+		margin:0;
+		padding-top: 200px;
+		gap:0;
+	}
+
+	.contents li {
+		box-shadow: none;
+		width:33.3334%;
+	}
+	.contents li img {
+		width:100%;
+	}
+}
+
+/************************* 모바일 *************************/
+@media (max-width:768px) {
+	/* .sidebar {
+		display:flex;
+		justify-content: space-between;
+	} */
+
+	.sidebar .logo {
+		width: 100px;
+		height: 30px;
+		background-size: 100%;
+		margin: 10px;
+	}
+	.sidebar .gnb {
+		position:absolute;
+		top:0;
+		right:0;
+	}
+
+	.sidebar .sns-nb {
+		display: none;
+	}
+
+	.contents {
+		padding-top: 50px;
+	}
+	.contents li {
+		width: 100%;
+	}
+}

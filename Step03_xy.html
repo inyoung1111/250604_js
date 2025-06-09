@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 1200px;
+            padding: 20px;
+            border: 5px solid red;
+            margin: 10px;
+            overflow: auto;
+            background-color: #f0f0f0;
+        }
+        .content{
+            width: 400px;
+            height: 1500px;
+            background: yellow;
+
+        }
+        p{
+        position: fixed;
+        right: 0;
+        top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <p id="putput">
+
+    </p>
+    <script>
+        /*
+        [ window 크기 관련 속성 ] 
+        window.innerwidth, window.innerHwight
+        브라우저 뷰포트의 내부 너비,높이 (스크롤바 포함)
+
+        window.sereen.width, window.screen.height
+        사용자 모니터 화면 전체 ㄴ ㅓ비 높이
+
+        스크롤위치
+        window.scrollX.window.scrollY
+        수평, 수직 스크롤 위치
+        
+
+        요소크기 관련 속성
+        offsetwidth , clientHeight
+        요소의 내부크기 패딩포함, 테두리제외,스크롤바 크기 제외
+        
+        */
+       const container = document.querySelector('.container');
+       const putput = document.querySelector('#output');
+
+       function update(){
+        output.innerHTML = `
+        window innerWidth : ${window.innerWidth}px <br/>
+        window innerHeight : ${window.innerHeight}px <br/>
+        scrollX : ${window.screenX}px <br/>
+        scrollY : ${window.screenY}px <br/>
+        <br/>
+        Contauner offsetwidht : ${}
+
+
+       }
+    </script>
+</body>
+</html>

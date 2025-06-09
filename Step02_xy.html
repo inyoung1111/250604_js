@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_xy.html</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background: yellow;
+            margin-top: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <p id="output"></p>
+
+    <script>
+        /*
+        clientX.clientY 
+        
+        
+        
+        */
+
+        document.querySelector('.container')
+        .addEventListener('mousemove',(e)=>{
+            const output = document
+            
+            const clientY = e.clientY;
+            const clientX = e.clientX;
+            const offsetX = e.offsetX;
+            const offsetY = e.offsetY;
+            const pageX = e.pageX;
+            const pageY = e.pageY;
+            const screenX = e.screenX;
+            const screenY = e.screenY;
+        })
+    </script>
+</body>
+</html>
